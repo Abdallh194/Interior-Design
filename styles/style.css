@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1550px;
+}
+
+.gb-btn {
+  background-color: #1f1f1f;
+  color: white;
+  width: 176px;
+  padding: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.gb-head {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+@media (max-width: 1400px) {
+  .gb-head {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1200px) {
+  .gb-head {
+    font-size: 2.5rem;
+  }
+}
+
+.cus_Margin_Padding {
+  margin-top: 50px;
+  padding: 40px 10px;
+}
+@media (max-width: 767px) {
+  .cus_Margin_Padding {
+    margin-top: 0;
+    padding: 40px 0;
+  }
+}
+
+.navbar {
+  background-color: transparent !important;
+  padding: 30px 10px;
+}
+.navbar .navbar-nav {
+  justify-content: center;
+  width: 80%;
+}
+.navbar .Links a {
+  font-size: 21px;
+  margin-right: 35px;
+  font-weight: 600;
+}
+.navbar .signup-Btn {
+  background-color: #1f1f1f;
+  color: white;
+  width: 176px;
+  padding: 11px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding: 6px 0px;
+  }
+  .navbar .container {
+    flex-direction: row-reverse;
+  }
+}
+
+.header .Info-Card .head {
+  font-size: 9rem;
+  font-weight: 400;
+}
+.header .Info-Card .info {
+  font-size: 1.25rem;
+  color: rgb(103, 103, 103);
+  margin-top: 7px;
+  width: 69%;
+  font-weight: 500;
+}
+.header .Info-Card .Project-Nums {
+  margin-top: 9rem;
+}
+.header .Info-Card .Project-Nums .num,
+.header .Info-Card .Project-Nums .name {
+  font-weight: 500;
+  color: rgb(103, 103, 103);
+}
+.header .Info-Card .Project-Nums .name {
+  font-size: 1.35rem;
+}
+.header .Info-Card .Project-Nums .num {
+  font-size: 3.5rem;
+}
+.header .Image-Card {
+  position: relative;
+}
+.header .Image-Card .img-container {
+  position: absolute;
+  width: 592px;
+  left: -30%;
+  margin-top: 51px;
+  z-index: 1;
+}
+.header .Image-Card .img-container::before {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 220px;
+  border: 2px solid #1f1f1f;
+  left: -35px;
+  top: -35px;
+  z-index: -1;
+  border-radius: 5px;
+}
+.header .Image-Card .to-Down {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  border-radius: 3px;
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  right: 0;
+}
+@media (max-width: 1500px) {
+  .header .Info-Card .head {
+    font-size: 7.2rem;
+  }
+  .header .Info-Card .Project-Nums {
+    width: 80%;
+  }
+  .header .Image-Card .img-container {
+    width: 477px;
+    left: -40%;
+  }
+}
+@media (max-width: 1200px) {
+  .header .Info-Card .head {
+    font-size: 5.3rem;
+    font-weight: 600;
+  }
+  .header .Info-Card .Project-Nums {
+    margin-top: 3rem;
+  }
+  .header .Info-Card .Project-Nums .num {
+    font-size: 2.5rem;
+  }
+  .header .Info-Card .Project-Nums .name {
+    font-size: 1.2rem;
+  }
+  .header .Image-Card .img-container {
+    width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .header .Info-Card .info {
+    width: 100%;
+    margin-top: 26px;
+  }
+  .header .Info-Card .col {
+    text-align: center;
+  }
+  .header .Info-Card .Project-Nums {
+    width: 100%;
+  }
+  .header .Image-Card {
+    margin-top: 40px;
+  }
+  .header .Image-Card .img-fluid {
+    width: 100%;
+  }
+  .header .Image-Card .img-container {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .header .Image-Card .img-container::before {
+    display: none;
+  }
+  .header .Image-Card .img-container .img-fluid {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .header .Info-Card {
+    text-align: center;
+    margin-top: 24px;
+  }
+  .header .Info-Card .Project-Nums .num {
+    font-size: 1.6rem;
+  }
+  .header .Info-Card .Project-Nums .name {
+    font-size: 0.9rem;
+  }
+  .header .Info-Card .head {
+    line-height: 1.2;
+  }
+  .header .Info-Card .gb-btn {
+    margin: auto;
+  }
+  .header .Image-Card .to-Down {
+    width: 70px;
+    height: 70px;
+    padding: 21px;
+  }
+}
+
+.Services .head {
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.Services .head span {
+  display: inline-block;
+  width: 90px;
+  height: 3px;
+  margin-right: 23px;
+  background-color: #1f1f1f;
+}
+.Services .row {
+  margin-top: 80px;
+}
+.Services .Service-Card .icon {
+  width: 80px;
+  margin-right: 25px;
+}
+.Services .Service-Card .card-details .card-head {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.Services .Service-Card .card-details .card-desc {
+  font-size: 1.2rem;
+  color: #6a6a6a;
+  width: 90%;
+}
+@media (max-width: 992px) {
+  .Services .row {
+    margin-top: 0;
+  }
+  .Services .Service-Card {
+    margin-top: 41px;
+  }
+}
+@media (max-width: 767px) {
+  .Services .head {
+    font-size: 2.5rem;
+  }
+  .Services .Service-Card .card-details .card-head {
+    font-size: 1.5rem;
+  }
+  .Services .Service-Card .card-details .card-desc {
+    width: 100%;
+  }
+  .Services .Service-Card .icon {
+    width: 141px;
+    margin-right: 15px;
+  }
+}
+
+.MaskGroup .Mask-Group-Card .card-info {
+  font-size: 1.3rem;
+  color: #4f4f4f;
+}
+.MaskGroup .Mask-Group-Card .cus-mt {
+  margin-top: 7rem;
+}
+.MaskGroup .Mask-Group-Card .name,
+.MaskGroup .Mask-Group-Card .plus {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 1400px) {
+  .MaskGroup .Mask-Group-Card .cus-mt {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 1200px) {
+  .MaskGroup .Mask-Group-Card .name,
+  .MaskGroup .Mask-Group-Card .plus {
+    font-size: 1.3rem;
+  }
+  .MaskGroup .Mask-Group-Card .mt-5 {
+    margin-top: 1rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .MaskGroup .Mask-Group-Card {
+    margin-top: 35px;
+  }
+  .MaskGroup .Mask-Group-Card .cus-mt {
+    margin-top: 3rem;
+  }
+  .MaskGroup .Mask-Group-Card .gb-btn {
+    margin-top: 35px !important;
+  }
+  .MaskGroup .Mask-Group-Card .plus,
+  .MaskGroup .Mask-Group-Card .name {
+    font-size: 1.1rem;
+  }
+  .MaskGroup .Mask-Image-Card .img-fluid {
+    width: 100%;
+  }
+}
+
+.DreamDesign {
+  margin-top: 100px;
+}
+.DreamDesign .DreamDesign-card .card-details {
+  margin-top: 60px;
+}
+.DreamDesign .DreamDesign-card .icon {
+  background-color: #1f1f1f;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.DreamDesign .DreamDesign-card .cus-line {
+  position: relative;
+}
+.DreamDesign .DreamDesign-card .cus-line::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: #acacac;
+  left: 50%;
+  top: 150%;
+}
+.DreamDesign .DreamDesign-card .card-info .head {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.DreamDesign .DreamDesign-card .card-info .desc {
+  font-size: 1.3rem;
+  color: rgb(65, 65, 65);
+  margin-top: 1.5rem;
+  width: 70%;
+}
+@media (max-width: 1400px) {
+  .DreamDesign .DreamDesign-card .card-info .desc {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .DreamDesign .DreamDesign-card .card-details {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  .DreamDesign .DreamDesign-card .mt-5 {
+    margin-top: 12px !important;
+  }
+  .DreamDesign .DreamDesign-card .card-info .desc {
+    font-size: 1rem;
+  }
+  .DreamDesign .DreamDesign-card .cus-line::before {
+    height: 50px;
+    top: 135%;
+  }
+}
+@media (max-width: 992px) {
+  .DreamDesign {
+    margin-top: 0;
+  }
+  .DreamDesign .Image-card {
+    margin-top: 35px;
+  }
+  .DreamDesign .Image-card .img-fluid {
+    width: 100%;
+  }
+  .DreamDesign .DreamDesign-card .mt-5 {
+    margin-top: 35px !important;
+  }
+}
+@media (max-width: 767px) {
+  .DreamDesign .DreamDesign-card .mt-5 {
+    margin-top: 48px !important;
+  }
+  .DreamDesign .DreamDesign-card .icon {
+    margin-right: 18px;
+  }
+  .DreamDesign .DreamDesign-card .card-info .head {
+    margin-top: 8px;
+  }
+  .DreamDesign .DreamDesign-card .cus-line::before {
+    height: 104px;
+    top: 128%;
+  }
+}
+
+.CustomerSays {
+  margin-top: 250px;
+}
+.CustomerSays .container {
+  position: relative;
+}
+.CustomerSays .cus-img {
+  position: absolute;
+  top: -207px;
+}
+.CustomerSays .gb-head {
+  position: absolute;
+  width: 46%;
+  right: 0;
+  top: -204px;
+}
+.CustomerSays .customer-Card {
+  background-color: #1f1f1f;
+  color: white;
+  margin: 20px auto;
+  padding: 60px 50px;
+  border-radius: 6px;
+  width: 40%;
+}
+.CustomerSays .customer-Card .customer-says {
+  margin-top: 37px;
+  font-size: 20px;
+}
+.CustomerSays .customer-Card .customer-details {
+  margin-top: 3rem;
+}
+.CustomerSays .customer-Card .customer-details .img-fluid {
+  border-radius: 50%;
+  width: 70px;
+  margin-right: 20px;
+}
+.CustomerSays .customer-Card .customer-details .name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.CustomerSays .customer-Card .customer-details .add {
+  margin-top: 9px;
+}
+.CustomerSays .arrows {
+  position: absolute;
+  bottom: -40px;
+  left: 17%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.CustomerSays .arrows .arrow {
+  cursor: pointer;
+}
+@media (max-width: 1560px) {
+  .CustomerSays .cus-img {
+    top: -200px;
+    width: 45%;
+  }
+}
+@media (max-width: 1400px) {
+  .CustomerSays .cus-img {
+    top: -170px;
+    width: 43%;
+  }
+  .CustomerSays .gb-head {
+    top: -136px;
+  }
+}
+@media (max-width: 1200px) {
+  .CustomerSays .cus-img {
+    top: -117px;
+  }
+}
+@media (max-width: 992px) {
+  .CustomerSays {
+    margin-top: 100px;
+  }
+  .CustomerSays .customer-Card {
+    width: 96%;
+    margin: 5px auto;
+  }
+  .CustomerSays .cus-img {
+    display: none;
+  }
+  .CustomerSays .gb-head {
+    width: -moz-fit-content;
+    width: fit-content;
+    left: 17px;
+    top: -110px;
+  }
+  .CustomerSays .arrows {
+    bottom: -54px;
+    left: 0%;
+  }
+}
+
+.subscribe {
+  margin-top: 145px;
+}
+.subscribe .content {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.subscribe .info {
+  font-size: 1.5rem;
+  color: #5c5c5c;
+  width: 85%;
+  margin: 4rem auto;
+}
+.subscribe form {
+  position: relative;
+}
+.subscribe form .form-control {
+  height: 66px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 0px 16px 5px rgba(0, 0, 0, 0.0705882353);
+}
+.subscribe .gb-btn {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}
+@media (max-width: 992px) {
+  .subscribe {
+    margin-top: 45px;
+  }
+  .subscribe .content {
+    width: 100%;
+  }
+  .subscribe .info {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 130px 5px 30px 5px;
+  margin-top: -72px;
+}
+footer .info {
+  font-size: 1.3rem;
+  width: 49%;
+  color: #8f8f8f;
+}
+footer .socials .icon {
+  margin-right: 35px;
+}
+footer .head {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+footer .desc {
+  margin-top: 30px;
+  font-size: 19px;
+  color: #969696;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  footer {
+    padding: 75px 5px 30px 5px;
+  }
+  footer .footer-card {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  footer .info {
+    width: 100%;
+  }
+  footer .socials .icon {
+    margin-right: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
